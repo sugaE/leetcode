@@ -13,21 +13,15 @@ class Solution(object):
         :type q: TreeNode
         :rtype: bool
         """
+        # p=[],q=[]
         if not p and not q:
             return True
-        if p and q and p.val == q.val:
-            if not p.left and not p.left and not p.right and not q.right:
+
+        if p and q and p.val==q.val:
+            if self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right):
                 return True
-            if p.left and q.left:
-                if self.isSameTree(p.left, q.left):
-                    if p.right and q.right:
-                        if self.isSameTree(p.right, q.right):
-                            return True
-                        else:
-                            return False
-                else:
-                    return False
-        return False¡¤
+
+        return False
 
 
 if __name__ == "__main__":
@@ -54,4 +48,6 @@ if __name__ == "__main__":
     tree11.left = tree33
     tree22.left = tree44
 
+    print(Solution().isSameTree(None, None))
     print(Solution().isSameTree(tree0, tree0))
+    print(Solution().isSameTree(tree0, tree00))
