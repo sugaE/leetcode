@@ -61,5 +61,8 @@ target/
 #Ipython Notebook
 .ipynb_checkpoints
 
-#pyCharm ide
+# pyCharm ide
 .idea/
+
+# mac os
+.DS_Store
