@@ -66,3 +66,5 @@ target/
 
 # mac os
 .DS_Store
+
+done/__init__.py
