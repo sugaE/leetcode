@@ -72,5 +72,5 @@ done/__init__.py
 #C++
 *.o
 playground
-.vscode/
+# .vscode/
 playground.dSYM/
